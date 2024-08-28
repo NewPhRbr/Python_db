@@ -1,0 +1,333 @@
+<!doctype html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container"><br>
+        <form method="post" action="/">
+            <div class="container">
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>early_toxicity</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='early_toxicity'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>ray_therapy</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='ray_therapy'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>ray_therapy_comp</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='ray_therapy_comp'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>sex</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='sex'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="unknown">unknown</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>event</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='event'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="no">Отсутствует</option>
+                            <option value="relapse">Рецидив</option>
+                            <option value="progression">Прогрессия</option>
+                            <option value="transform">Трансформация</option>
+                            <option value="death">Смерть</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>main_request</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='main_request'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="adequate">Адекватный ответ</option>
+                            <option value="inadequate">Неадекватный ответ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>deauville_score</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='deauville_score'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="ds_1">DS=1</option>
+                            <option value="ds_2">DS=2</option>
+                            <option value="ds_3">DS=3</option>
+                            <option value="ds_4">DS=4</option>
+                            <option value="ds_5">DS=5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>anat_request</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='anat_request'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="full_remission">полная ремиссия</option>
+                            <option value="full_not_resp">полная ремиссия неподтвержденная</option>
+                            <option value="part_remission">частичная ремиссия</option>
+                            <option value="not_change">без изменений</option>
+                            <option value="progression">прогрессия</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>group</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='groups'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="tg_1">TG-1</option>
+                            <option value="tg_2">TG-2</option>
+                            <option value="tg_3">TG-3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>protocol</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='protocol'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="euroNet">EuroNet-PHL-C1</option>
+                            <option value="dal_2002">DAL-GPOH-2002</option>
+                            <option value="dal_2003">DAL-GPOH-2003</option>
+                            <option value="dal_1995">DAL-HD-1995</option>
+                            <option value="no_protocol">Непрограмная терапия</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>stage</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='stage'>
+                            <option value="" selected disabled>Выберите из списка</option>
+                            <option value="stage_1">I</option>
+                            <option value="stage_2">II</option>
+                            <option value="stage_3">III</option>
+                            <option value="stage_4">IV</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>histologic</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='histologic'>
+                            <option value="" selected disabled>Выберите из списка
+                            </option>
+                            <option value="nod_sclerosis">Нодулярный склероз</option>
+                            <option value="mixed_cell">Смешанно-клеточный
+                                вариант</option>
+                            <option value="lymphocytic_predominance">Лимфоцитарное
+                                преобладание</option>
+                            <option value="lymphocytic_depletion">Лимфоцитарное
+                                истощение</option>
+                            <option value="nos">NOS</option>
+                            <option value="nod_type">Нодулярный тип с лимфоцитарным
+                                преобладанием</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>b_symptoms</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" name='b_symptoms'>
+                            <option value="" selected disabled>Выберите из списка
+                            </option>
+                            <option value="sweating">Потливость</option>
+                            <option value="fever">Лихорадка</option>
+                            <option value="weight_loss">Снижение массы тела</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>region</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='region'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>e_impact</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='e_impact'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>bm_damage_myelogram</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='bm_damage_myelogram'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>bm_damage_kt</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='bm_damage_kt'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>request_pat</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='text' name='request_pat'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>start_therapy_date</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='date' name='start_therapy_date'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>end_therapy_date</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='date' name='end_therapy_date'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>event_date</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='date' name='event_date'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>last_date</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='date' name='last_date'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>birth_date</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='date' name='birth_date'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>leykocytes</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='leykocytes'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>hemoglobin</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='hemoglobin'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>trombocytes</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='trombocytes'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>ldh</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='ldh'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>ebv</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='ebv'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>esr</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='esr'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>init_val</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='init_val'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3 col-form-label">
+                        <label>tumor_val</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="form-control" type='number' name='tumor_val'>
+                    </div>
+                    <div>
+                        <input class="form-control" type='submit' value='Сохранить'>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
